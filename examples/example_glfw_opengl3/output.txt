@@ -1,0 +1,24 @@
+./example_glfw_opengl3 
+../../imgui_internal.h:534:117: runtime error: reference binding to misaligned address 0x61800001335f for type 'struct ImGuiTableCellData', which requires 4 byte alignment
+0x61800001335f: note: pointer points here
+ 03 04 05 06 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00
+             ^ 
+../../imgui_tables.cpp:1553:28: runtime error: member access within misaligned address 0x61800001335f for type 'struct ImGuiTableCellData', which requires 4 byte alignment
+0x61800001335f: note: pointer points here
+ 03 04 05 06 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00
+             ^ 
+../../imgui_tables.cpp:1554:27: runtime error: member access within misaligned address 0x61800001335f for type 'struct ImGuiTableCellData', which requires 4 byte alignment
+0x61800001335f: note: pointer points here
+ 03 04 05 06 42  96 fa cc 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00
+             ^ 
+../../imgui_tables.cpp:1725:77: runtime error: member access within misaligned address 0x61800001335f for type 'struct ImGuiTableCellData', which requires 4 byte alignment
+0x61800001335f: note: pointer points here
+ 03 04 05 06 42  96 fa cc 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00
+             ^ 
+../../imgui_tables.cpp:1726:76: runtime error: member access within misaligned address 0x61800001335f for type 'struct ImGuiTableCellData', which requires 4 byte alignment
+0x61800001335f: note: pointer points here
+ 03 04 05 06 42  96 fa cc 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00
+             ^ 
+../../imgui_tables.cpp:1730:48: runtime error: member access within misaligned address 0x61800001335f for type 'struct ImGuiTableCellData', which requires 4 byte alignment
+0x61800001335f: note: pointer points here
+ 03 04 05 06 42  96 fa cc 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00

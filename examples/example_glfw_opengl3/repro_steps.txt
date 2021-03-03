@@ -1,0 +1,6 @@
+1. modified the Makefile to include -fsanitize=address,undefined
+2. run the example_glfw_opengl3 binary
+3. hover over any column heading in a table 
+    for example Tables & columns -> Horizontal Scrolling -> Line #
+
+Ubuntu focal 20.04

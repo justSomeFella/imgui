@@ -22,8 +22,9 @@ SOURCES += $(IMGUI_DIR)/backends/imgui_impl_glfw.cpp $(IMGUI_DIR)/backends/imgui
 OBJS = $(addsuffix .o, $(basename $(notdir $(SOURCES))))
 UNAME_S := $(shell uname -s)
 
-CXXFLAGS = -I$(IMGUI_DIR) -I$(IMGUI_DIR)/backends
+CXXFLAGS = -I$(IMGUI_DIR) -I$(IMGUI_DIR)/backends -fsanitize=address,undefined
 CXXFLAGS += -g -Wall -Wformat
+LDFLAGS = -fsanitize=address,undefined
 LIBS =
 
 ##---------------------------------------------------------------------
